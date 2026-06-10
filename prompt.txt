@@ -1,0 +1,63 @@
+PROMPT 1: I want to create graphics-editor using powershell so that i can 
+open in vs code and also give me what to paste here
+RESPONSE: Created a full HTML graphics editor (PixelForge) with tools like 
+pencil, brush, eraser, fill, rectangle, circle, line, text, eyedropper, 
+color palette, layers, history, export PNG. Gave PowerShell commands to 
+create folder and open in VS Code using: code ~/graphics-editor/index.html
+
+PROMPT 2: I have this C code so give me how to create graphics-editor folder 
+and main.c file
+RESPONSE: Gave bash heredoc command to create folder and paste entire C code 
+into main.c file
+
+PROMPT 3: How to run in powershell
+RESPONSE: Step1: mkdir graphics-editor, cd graphics-editor, notepad main.c
+Step2: gcc main.c -o graphics-editor -lm
+Step3: .\graphics-editor.exe
+
+PROMPT 4: What i should paste to get gcc
+RESPONSE: pacman -S mingw-w64-ucrt-x86_64-gcc in MSYS2 UCRT64 terminal
+
+PROMPT 5: gcc not recognized in PowerShell
+RESPONSE: Use full path: & "C:\msys64\ucrt64\bin\gcc.exe" main.c -o graphics-editor.exe -lm
+
+PROMPT 6: exe not created after compiling
+RESPONSE: Checked folder contents, tried full path for input and output files
+
+PROMPT 7: How to run in MSYS2 terminal
+RESPONSE: cd ~/graphics-editor && gcc main.c -o graphics-editor -lm && ./graphics-editor
+
+PROMPT 8: How to push into github
+RESPONSE: git init, git add ., git commit -m "first commit", git branch -M main,
+git remote add origin https://github.com/sahanakavali966-ops/graphics-editor.git,
+git push -u origin main
+
+PROMPT 9: Can we do without token
+RESPONSE: Install GitHub CLI: pacman -S mingw-w64-ucrt-x86_64-gh then gh auth login
+to authenticate via browser without token
+
+PROMPT 10: How to create folder in powershell
+RESPONSE: mkdir graphics-editor or New-Item -ItemType Directory -Name "graphics-editor"
+
+PROMPT 11: How to run code in powershell
+RESPONSE: Step1: cd C:\Users\sahan\graphics-editor
+Step2: & "C:\msys64\ucrt64\bin\gcc.exe" main.c -o graphics-editor.exe -lm
+Step3: .\graphics-editor.exe
+
+PROMPT 12: Say me how to run in powershell
+RESPONSE: Add gcc to PATH: $env:PATH += ";C:\msys64\ucrt64\bin"
+Then: gcc main.c -o graphics-editor.exe -lm
+Then: .\graphics-editor.exe
+
+PROMPT 13: How to push into github through powershell
+RESPONSE: Install git from git-scm.com, then:
+git init, git add ., git commit -m "first commit",
+git branch -M main, git remote add origin URL, git push -u origin main
+Use: git config --global credential.helper manager to login via browser
+
+PROMPT 14: What to add in README
+RESPONSE: Added project title, features list, compile instructions,
+run instructions, and usage menu options
+
+PROMPT 15: Give prompts and responses in short for prompt.txt file
+RESPONSE: Gave short summary of all prompts and responses
